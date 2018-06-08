@@ -21,6 +21,6 @@ podTemplate(label: 'mypod', containers: [
                 pipelineTriggers([])
         ])
 
-        deployInfra('jenkins', false)
+        deployInfra('jenkins', 'kubeconfig.yml', false, false)
     }
 }
